@@ -1,0 +1,4 @@
+cloud_providers:
+  vagrant:
+    key_name: insecure_private_key
+    key_file: '~/.vagrant.d/insecure_private_key'
