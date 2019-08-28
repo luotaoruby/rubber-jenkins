@@ -225,6 +225,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano (= 2.15.9)
   rubber
 
 BUNDLED WITH
