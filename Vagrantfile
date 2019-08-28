@@ -13,6 +13,11 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/xenial64"
+  config.vm.provider :rubber do |rubber|
+    rubber.rubber_env = "vagrant"
+    rubber.roles = "jenkins:primary=true"
+    rubber.rvm_ruby_version = 'ruby-2.6.3'
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
