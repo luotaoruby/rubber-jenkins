@@ -1,3 +1,5 @@
+cloud_provider: vagrant
+
 cloud_providers:
   vagrant:
     key_name: insecure_private_key
