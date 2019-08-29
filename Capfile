@@ -14,7 +14,7 @@ $:.unshift "#{root}/vendor/plugins/rubber/lib/"
 require 'rubber'
 
 Rubber::initialize(root, env)
-# require 'rubber/capistrano'
+require 'rubber/capistrano'
 
-# Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
+Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
 # load 'config/deploy'
